@@ -1,5 +1,10 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+// In production (Firebase App Hosting), backend is on the same host under /_/backend
+// In development, proxy to the local backend server
+const backendUrl = isProd ? '/_/backend' : 'http://localhost:5000';
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -15,11 +20,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:5000/api/:path*',
+        destination: `${backendUrl}/api/:path*`,
       },
       {
         source: '/productimages/:path*',
-        destination: 'http://localhost:5000/productimages/:path*',
+        destination: `${backendUrl}/productimages/:path*`,
       },
     ];
   },
