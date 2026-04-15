@@ -30,7 +30,7 @@ export default function SellerDashboard() {
     setLoading(true);
     try {
       const config = { headers: { Authorization: `Bearer ${user?.token}` } };
-      await axios.post('http://localhost:5000/api/products', {
+      await axios.post('/api/products', {
         name, price: Number(price), description, category, brand, stock: Number(stock), images: [imageUrl]
       }, config);
       toast.success('ASSET SUBMITTED FOR CLEARANCE.', {

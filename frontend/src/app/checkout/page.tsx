@@ -52,13 +52,13 @@ export default function Checkout() {
         itemsPrice, taxPrice, shippingPrice, totalPrice
       }, config);
 
-      const { data: razorpayData } = await axios.post('http://localhost:5000/api/payments/create', {
+      const { data: razorpayData } = await axios.post('/api/payments/create', {
         amount: Math.round(totalPrice),
         orderId: orderData._id
       }, config);
 
       const options = {
-        key: 'rzp_test_change_this',
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || 'rzp_test_change_this',
         amount: razorpayData.amount,
         currency: "INR",
         name: "ZARLO Noir et Or",
@@ -66,7 +66,7 @@ export default function Checkout() {
         order_id: razorpayData.id,
         handler: async function (response: any) {
           try {
-            await axios.post('http://localhost:5000/api/payments/verify', {
+            await axios.post('/api/payments/verify', {
               razorpay_payment_id: response.razorpay_payment_id,
               razorpay_order_id: response.razorpay_order_id,
               razorpay_signature: response.razorpay_signature,

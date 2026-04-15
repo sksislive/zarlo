@@ -42,6 +42,7 @@ export default function Login() {
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm5tP0aNom-b3zKaHhRGzU8I19dRAofKqrlwX6TY7GEb9xOXNUb24jXGvdpVdTPogPhGCBkaSfthgSsA8DYutulK7VXeK8wi_ppFY21230mYtMdh8N8pIPQQ9-65kT29I29YexlzvIqzgyWA0Vm1RUN8uCp2R9uQOG18fErw0TkjhHDT4Foqwj-ITBlTJ6D8fc8Jefy9_YVX8_1hjzrQTispfU10jfzgRSKbUddlQy0VOM_X40eeEolWME4ASrU1hCMMZaLx9g_31y"
             alt="Cinematic fashion editorial"
             fill
+            sizes="(max-width: 1024px) 0vw, 58vw"
             className="object-cover grayscale brightness-50 z-0"
           />
           <div className="relative z-10">
