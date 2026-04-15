@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Manrope:wght@400;600&amp;family=Space+Grotesk:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#353535",
+                    "primary-container": "#000000",
+                    "on-secondary-container": "#f5cc72",
+                    "error": "#ffb4ab",
+                    "surface-container-low": "#1b1b1b",
+                    "tertiary": "#ffb4ab",
+                    "surface-container-highest": "#353535",
+                    "secondary-fixed": "#ffdf9e",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "inverse-primary": "#5d5f5f",
+                    "on-tertiary": "#690005",
+                    "primary-fixed": "#e2e2e2",
+                    "tertiary-fixed": "#ffdad6",
+                    "surface": "#131313",
+                    "on-surface-variant": "#cfc4c5",
+                    "on-tertiary-fixed": "#410002",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "tertiary-fixed-dim": "#ffb4ab",
+                    "secondary-fixed-dim": "#eac169",
+                    "on-tertiary-container": "#e71820",
+                    "on-error-container": "#ffdad6",
+                    "on-surface": "#e2e2e2",
+                    "on-secondary-fixed": "#261a00",
+                    "surface-tint": "#c6c6c7",
+                    "secondary": "#eac169",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#454747",
+                    "on-primary-fixed": "#1a1c1c",
+                    "tertiary-container": "#000000",
+                    "on-background": "#e2e2e2",
+                    "inverse-on-surface": "#303030",
+                    "secondary-container": "#735500",
+                    "surface-container": "#1f1f1f",
+                    "primary": "#c6c6c7",
+                    "on-error": "#690005",
+                    "outline-variant": "#4c4546",
+                    "on-tertiary-fixed-variant": "#93000b",
+                    "on-primary": "#2f3131",
+                    "surface-bright": "#393939",
+                    "on-secondary": "#3f2e00",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-container-high": "#2a2a2a",
+                    "background": "#131313",
+                    "outline": "#988e90",
+                    "on-primary-container": "#747576",
+                    "surface-dim": "#131313",
+                    "inverse-surface": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Manrope"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom Tonal Shift Logic for Brutalist aesthetic */
+        .tonal-shift {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar (Suppressed for focused login task per logic: Transactional screens hide primary nav links to prioritize flow) -->
+<!-- However, since user explicitly requested TopNavBar, it is included but styled as a simplified header for the login journey -->
+<nav class="bg-[#131313]/80 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center w-full px-8 h-20">
+<div class="text-3xl font-black tracking-[0.15em] text-[#EAC169] uppercase font-headline">ZARLO</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#C6C6C7] hover:text-white transition-colors duration-300">shopping_bag</button>
+<button class="material-symbols-outlined text-[#C6C6C7] hover:text-white transition-colors duration-300">person</button>
+</div>
+</nav>
+<main class="min-h-screen flex items-center justify-center pt-20 px-4">
+<div class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-0 bg-surface-container-low overflow-hidden">
+<!-- Left Side: Editorial Content -->
+<div class="hidden lg:flex lg:col-span-7 relative h-full min-h-[700px] flex-col justify-end p-12 overflow-hidden">
+<img alt="Cinematic fashion editorial" class="absolute inset-0 w-full h-full object-cover grayscale brightness-50" data-alt="High-contrast black and white editorial shot of a minimalist concrete architectural space with sharp shadows and a single spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm5tP0aNom-b3zKaHhRGzU8I19dRAofKqrlwX6TY7GEb9xOXNUb24jXGvdpVdTPogPhGCBkaSfthgSsA8DYutulK7VXeK8wi_ppFY21230mYtMdh8N8pIPQQ9-65kT29I29YexlzvIqzgyWA0Vm1RUN8uCp2R9uQOG18fErw0TkjhHDT4Foqwj-ITBlTJ6D8fc8Jefy9_YVX8_1hjzrQTispfU10jfzgRSKbUddlQy0VOM_X40eeEolWME4ASrU1hCMMZaLx9g_31y"/>
+<div class="relative z-10">
+<p class="font-label text-secondary text-sm tracking-[0.3em] mb-4 uppercase">Identity &amp; Access</p>
+<h2 class="font-headline text-6xl font-black text-white leading-tight uppercase tracking-tighter">
+                        DIGITAL <br/> FLAGSHIP <br/> ACCESS
+                    </h2>
+</div>
+</div>
+<!-- Right Side: Login Form -->
+<div class="lg:col-span-5 flex flex-col justify-center p-8 md:p-16 lg:p-20 bg-surface">
+<div class="mb-12">
+<h1 class="font-headline text-5xl font-black text-on-surface tracking-tight uppercase leading-none mb-2">WELCOME BACK</h1>
+<div class="w-12 h-1 bg-secondary"></div>
+</div>
+<form class="space-y-8">
+<div class="space-y-2 group">
+<label class="font-label text-xs tracking-widest text-on-surface-variant uppercase">Email Address</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-3 text-on-surface font-label placeholder:text-outline/30 transition-all" placeholder="NAME@DOMAIN.COM" type="email"/>
+</div>
+<div class="space-y-2 group">
+<label class="font-label text-xs tracking-widest text-on-surface-variant uppercase">Password</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-3 text-on-surface font-label placeholder:text-outline/30 transition-all" placeholder="••••••••" type="password"/>
+</div>
+<div class="flex items-center justify-between pt-2">
+<a class="font-label text-[10px] tracking-widest text-outline hover:text-secondary transition-all uppercase" href="#">Forgot Password?</a>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-headline font-bold py-6 px-12 text-sm tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all duration-300 active:scale-95" type="submit">
+                        LOGIN
+                    </button>
+</form>
+<div class="mt-16 pt-8 border-t border-outline-variant/30 flex flex-col gap-4">
+<p class="font-label text-[11px] tracking-widest text-on-surface-variant uppercase">
+                        Don't have an account? 
+                        <a class="text-secondary hover:text-white transition-colors ml-2" href="#">Sign Up</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-[#0E0E0E] w-full border-t border-[#2A2A2A] flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8">
+<div class="text-lg font-bold text-[#C6C6C7] font-headline tracking-widest uppercase">ZARLO</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-space-grotesk text-[10px] tracking-widest uppercase text-[#C6C6C7]/60 hover:text-[#EAC169] transition-all" href="#">PRIVACY</a>
+<a class="font-space-grotesk text-[10px] tracking-widest uppercase text-[#C6C6C7]/60 hover:text-[#EAC169] transition-all" href="#">TERMS</a>
+<a class="font-space-grotesk text-[10px] tracking-widest uppercase text-[#C6C6C7]/60 hover:text-[#EAC169] transition-all" href="#">MANIFESTO</a>
+<a class="font-space-grotesk text-[10px] tracking-widest uppercase text-[#C6C6C7]/60 hover:text-[#EAC169] transition-all" href="#">CONTACT</a>
+</div>
+<div class="font-space-grotesk text-[10px] tracking-widest uppercase text-[#C6C6C7]/60">
+            © 2024 ZARLO DIGITAL FLAGSHIP
+        </div>
+</footer>
+</body></html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZARLO | Digital Flagship</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;900&amp;family=Manrope:wght@400;500;700&amp;family=Space+Grotesk:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#454747",
+                        "primary": "#c6c6c7",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-container": "#e71820",
+                        "on-tertiary": "#690005",
+                        "secondary-fixed-dim": "#eac169",
+                        "inverse-primary": "#5d5f5f",
+                        "surface-bright": "#393939",
+                        "on-tertiary-fixed": "#410002",
+                        "secondary-container": "#735500",
+                        "on-surface-variant": "#cfc4c5",
+                        "inverse-surface": "#e2e2e2",
+                        "surface": "#131313",
+                        "error-container": "#93000a",
+                        "primary-container": "#000000",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-container": "#1f1f1f",
+                        "tertiary-container": "#000000",
+                        "on-background": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#93000b",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "surface-tint": "#c6c6c7",
+                        "tertiary-fixed": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-variant": "#353535",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed-dim": "#ffb4ab",
+                        "secondary": "#eac169",
+                        "surface-container-highest": "#353535",
+                        "tertiary": "#ffb4ab",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary": "#3f2e00",
+                        "surface-container-low": "#1b1b1b",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#988e90",
+                        "background": "#131313",
+                        "secondary-fixed": "#ffdf9e",
+                        "surface-dim": "#131313",
+                        "on-surface": "#e2e2e2",
+                        "on-primary-fixed": "#1a1c1c",
+                        "on-primary-container": "#747576",
+                        "on-secondary-container": "#f5cc72",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "inverse-on-surface": "#303030",
+                        "on-primary": "#2f3131",
+                        "outline-variant": "#4c4546"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e2e2e2;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 h-24 w-full no-line-boundary tonal-shift">
+<div class="text-2xl font-black tracking-[0.2em] text-white font-headline">ZARLO</div>
+<div class="hidden md:flex gap-10">
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">MEN</a>
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">WOMEN</a>
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#EAC169] after:content-[''] after:block after:w-1 after:h-1 after:bg-[#FFB4AB] after:mx-auto" href="#">NEW ARRIVALS</a>
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">COLLECTIONS</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#C6C6C7] hover:bg-white/5 p-2 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="text-[#C6C6C7] hover:bg-white/5 p-2 transition-all duration-300 relative">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-[#C6C6C7] hover:bg-white/5 p-2 transition-all duration-300">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-surface-container-lowest">
+<img alt="Luxury streetwear" class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="Editorial fashion photography of two models in avant-garde luxury streetwear, monochromatic dark aesthetic, dramatic high-contrast lighting in an industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC36PjQ3ypqH2MtPLWJbeOKsApXyVX4OpnNdrHUkF-Hxp3-Yhs2XGqe4bBe8sUfx4Pqjm7ohYp3JwunkZj_pAJMfBNWTBSfDkVmtP3ZEv_xMD1ZoD4rvUMg4FpTGj89AE-uymBoTnd8O_9EpdxFFzFpoPYcQZp8l89aYdeXEhzt7J9oIa3nYxPACzoMXaxVFa6uSWVSBPcRqfBe-Mr3gNbce6oYHUXX0BKM9_FJUaD4I_Gaerth2ATTRc0RT082qZTAtTa55GGU7qdo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
+</div>
+<div class="relative z-10 text-center px-6">
+<h1 class="font-headline font-black text-6xl md:text-8xl lg:text-9xl uppercase tracking-tighter leading-[0.85] mb-8">
+                    OWN YOUR STYLE <br/> <span class="text-secondary">WITH ZARLO</span>
+</h1>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="bg-secondary text-on-secondary px-12 py-5 font-label font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300 w-full md:w-auto">
+                        Shop Men
+                    </button>
+<button class="border border-white/20 bg-surface/40 backdrop-blur-md text-white px-12 py-5 font-label font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-300 w-full md:w-auto">
+                        Shop Women
+                    </button>
+</div>
+</div>
+</section>
+<!-- Collections Bento Grid -->
+<section class="bg-surface py-32 px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-[1200px] md:h-[800px]">
+<div class="md:col-span-8 relative group overflow-hidden bg-surface-container">
+<img alt="New Arrivals" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Modern fashion model walking through high-end minimalist architecture, wearing sharp oversized coat, sunset lighting casting long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZq3mvkgSsU6N3JMySfdGTr5WLqXjJivIAflYt_ZX0CFgLaMY6I_UjEpGOCB3Zjd5IBomLID0xh-Kc6roZx8gbujA1axwvWI5RHUU3TpKADMYlRkVmhEdOB_qEVUgRMLI206f8oa0i4G_0UaTxFXhw2rBvLOUsG1h3gxpfDJ84KcJCamuExCpd9YSWnToDYr7nqHQiQWMrFDOGf0N6KgAQuDEpwgyg1B4OCXkTvqatGyWaARn0tBmLJDm1Dttxvt1yebSxayCRN4-q"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+<span class="font-label text-tertiary text-sm tracking-[0.3em] mb-2">CURATED DROPS</span>
+<h2 class="font-headline text-5xl font-black uppercase text-white">NEW ARRIVALS</h2>
+<a class="mt-6 text-white font-label tracking-widest uppercase border-b border-white w-fit pb-1 hover:text-secondary hover:border-secondary transition-all" href="#">Explore Drop</a>
+</div>
+</div>
+<div class="md:col-span-4 relative group overflow-hidden bg-surface-container-high">
+<img alt="Women Collection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Close up portrait of a female model wearing high-end yellow futuristic knitwear, clean studio lighting with sharp highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9r8fPm9UnCWe6PqE6nGqN5Hbi3l1L-4O8RT-kD04PdIR3oWTFf-WM269wU3psWQJnFlz1eMW6hIcJNNp6oX_cvoXQgp4-zn2_ltmePrNcS9xJKx-hTlTpknxLhGce9CCLNs_905PR3u3W-KTcwkkJrPI5SRFTyAJEMmY9XaMY1UOxmJFxHFd8b-hZp7GzNmpN5uxrhY0AdRWx4lcfDu9aeTPcdROxZxVnQq4RdPVbtsDj7gs_rGRJlIzaFQpE83VKgFT3HrLQzrHE"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+<h2 class="font-headline text-3xl font-black uppercase text-white">WOMEN</h2>
+<a class="mt-4 text-white font-label tracking-widest uppercase text-xs" href="#">Shop Selection</a>
+</div>
+</div>
+<div class="md:col-span-4 relative group overflow-hidden bg-surface-container-high">
+<img alt="Men Collection" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Male model in dark minimalist technical suit leaning against a concrete wall, moody architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIyxg4UM7a-Vkpfnj38mxZDdY4-JbWFrR-dgEwC9M9jXqap5pwArwQxJR0y03rDnCefHsBmSynocVa6nNiHwKYNVjF5GI_WEOHT_VFxmCBal8-tLrEDOQfcnzRt1bWnTVLPr52-j0rNXRCzlQvro_Oe3TfLaIpCVuE1vEy9h4oYfAxvDcmwQ8B7oooXQN3R416DQ460ocb9qC6xIuUEXdimw6k6ERD86L59hByvfKibJBC19rOpokTw7l3_FL9ddxXfA9OeaQxfh6j"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+<h2 class="font-headline text-3xl font-black uppercase text-white">MEN</h2>
+<a class="mt-4 text-white font-label tracking-widest uppercase text-xs" href="#">Shop Selection</a>
+</div>
+</div>
+<div class="md:col-span-8 relative group overflow-hidden bg-surface-container">
+<img alt="Limited Collections" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" data-alt="Wide shot of several models standing in a line wearing experimental structural fashion pieces in a white minimalist gallery space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOp-8BVxDmWXxUQtOgl2xWOctKEIdPbTFz5l2WFA_VAwlgeDYTd25sU0sMuQriqzeFg80QNTeXVXYe_g_iAYzJWFnFrFfPsaWP6RVE_ejU_4pJWe7GgmK0NaNQ8dsvn6QcFPKQwC4tbWG--HXKOoJRaJ9WhRcUOoXT6fnto8HqqHRHdcoGk-Ng18wUgA6FBF1YlNdhekrnPSDZ1KX3Er7niA6YXZnS2SUXLtwuZ11s2YY-wYM3I55D2_P8K5DZWwyojwzRH4uIYmNM"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+<h2 class="font-headline text-4xl font-black uppercase text-white">COLLECTIONS</h2>
+<a class="mt-4 text-white font-label tracking-widest uppercase border-b border-white w-fit pb-1" href="#">View Archive</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Sale Banner -->
+<section class="bg-surface-container-lowest py-16 overflow-hidden flex items-center border-y border-white/5">
+<div class="whitespace-nowrap flex animate-marquee">
+<div class="flex gap-20 items-center px-10">
+<span class="text-tertiary font-headline text-6xl md:text-8xl font-black tracking-tighter">FLAT 30% OFF</span>
+<span class="text-outline font-headline text-6xl md:text-8xl font-black tracking-tighter opacity-20">ZARLO WINTER</span>
+<span class="text-tertiary font-headline text-6xl md:text-8xl font-black tracking-tighter">FLAT 30% OFF</span>
+<span class="text-outline font-headline text-6xl md:text-8xl font-black tracking-tighter opacity-20">LIMITED DROP</span>
+</div>
+<div class="flex gap-20 items-center px-10">
+<span class="text-tertiary font-headline text-6xl md:text-8xl font-black tracking-tighter">FLAT 30% OFF</span>
+<span class="text-outline font-headline text-6xl md:text-8xl font-black tracking-tighter opacity-20">ZARLO WINTER</span>
+<span class="text-tertiary font-headline text-6xl md:text-8xl font-black tracking-tighter">FLAT 30% OFF</span>
+<span class="text-outline font-headline text-6xl md:text-8xl font-black tracking-tighter opacity-20">LIMITED DROP</span>
+</div>
+</div>
+</section>
+<!-- Trending Product Grid -->
+<section class="bg-surface py-32 px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="font-label text-secondary text-sm tracking-[0.4em] uppercase mb-4 block">Seasonal Selection</span>
+<h2 class="font-headline text-5xl md:text-7xl font-black uppercase">Trending</h2>
+</div>
+<a class="font-label text-white tracking-[0.2em] border-b border-white pb-2 hover:text-secondary hover:border-secondary transition-all" href="#">VIEW ALL PRODUCTS</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="group relative bg-surface-container-low transition-all">
+<div class="aspect-[3/4] overflow-hidden relative">
+<img alt="Luxury Outerwear" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end black technical puffer jacket with architectural silhouette, studio lighting on grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOZitRoY7bQ6moAEWcklKMBM1UJCn1mljwIVs_40Zn_1UYCDyx72Q-cmE46cuXiXflkU5KLIeHyxR3MpXOiJYBa9WDwhygfbJhEeEj_rGoTIrnYgzXpMH5xQtqgS8l50S71RX_iXr7Bsv4j3DJs8q--3AnoFISk7kcl3gc0fy0_lwNWskh2Pk8I2I1CAAhBqaa1ph4Yu-2wcmH90gpjY8fVioFGRFu2eFJqM-weuM2X946124nUEH95-TVfNFJTLV4BaMJQ4FLVLBI"/>
+<div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-surface/80 backdrop-blur-md flex gap-2">
+<button class="flex-1 bg-white text-black py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-secondary transition-colors">Quick Add</button>
+<button class="bg-white/10 text-white p-3 hover:bg-white hover:text-black transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-body font-bold text-lg uppercase tracking-tight">Onyx Tech Shell</h3>
+<span class="font-label text-secondary">$890</span>
+</div>
+<p class="font-label text-xs text-outline tracking-wider uppercase">OUTERWEAR / 01</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative bg-surface-container-low transition-all">
+<div class="aspect-[3/4] overflow-hidden relative">
+<img alt="Minimalist Tee" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a heavy cotton premium white t-shirt with clean seams and structural fit, minimalist studio shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkUKeLIw6Oyydf4Pho47c3C2PHTlGdel4yhaBaY73ogLdzjiy5eW07Zeemyf0Rjak4Q1aF3UqBJJgkdC36b2XfUGznNfSXfM58Rz5rRvjbUzHROCduP2IDnvcfC8vDRVCpiVG_A38OZlbPECW2FC6sO78plk7Se-9pDBhBxSB1edX9o4LMw7_rYNBVC-MSqMjHzC91Jji5Lq8Vs1qIusow_HsqLxLfOM2YBHwm0CbLodt_8rYgqdNXEYfiD2sh_4oeFLggPGlW7CXt"/>
+<div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-surface/80 backdrop-blur-md flex gap-2">
+<button class="flex-1 bg-white text-black py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-secondary transition-colors">Quick Add</button>
+<button class="bg-white/10 text-white p-3 hover:bg-white hover:text-black transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-body font-bold text-lg uppercase tracking-tight">Base Structural Tee</h3>
+<span class="font-label text-secondary">$145</span>
+</div>
+<p class="font-label text-xs text-outline tracking-wider uppercase">ESSENTIALS / 08</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative bg-surface-container-low transition-all">
+<div class="aspect-[3/4] overflow-hidden relative">
+<img alt="Leather Piece" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Premium black leather motorcycle jacket with metallic hardware details, cinematic lighting with rich textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7nlAhaDTNPe0BmSHQR58nZp4TfHG0zlYMehI8C85qy5esUvJSY8PQSG4wvy3mSUCnzvhbsAxMy8JtLH-KuXfJ7j8oTX4zCGkT6Gt5AeJ4r2ginKriaeKVWJt6DAcgTPnZK1JBihBlH_AOBr68TGLukD2zFG9eCv7SpxBfJbMqGdQymRNUth9oXJTAvRzUJ5rjnl7gnK7CDsI0xfrzOhgB15EHCg0_nIEstvZTUWdwKhcOqnmNbd2lFAxP84lf8bRtrm_F1PtD5dt7"/>
+<div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-surface/80 backdrop-blur-md flex gap-2">
+<button class="flex-1 bg-white text-black py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-secondary transition-colors">Quick Add</button>
+<button class="bg-white/10 text-white p-3 hover:bg-white hover:text-black transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-body font-bold text-lg uppercase tracking-tight">Rebel Hide Jacket</h3>
+<span class="font-label text-secondary">$1,250</span>
+</div>
+<p class="font-label text-xs text-outline tracking-wider uppercase">SIGNATURE / 04</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative bg-surface-container-low transition-all">
+<div class="aspect-[3/4] overflow-hidden relative">
+<img alt="Accessory" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury black leather tote bag with minimalist geometric branding, set against a dark marble background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCvnMF6rKBUcC0T4fe4orF-Gm089FiI9wxsDzy4Ktm1rLpLO4H4Q4i-VtvvA_UALgfw_ifJ_Nlmswm-XsIPt6AU2NeFQE5gUSPu2EvSdJsCMlxa8hyKsdM6T-JxyBM1YcyvU7BjNuu2ABNLsMuhlGd_L4WYajCegC0Z1SYBuOsE2OurGGfQFv9Rc_F_K8AZ067ItsyN9LQ35YEA-CkaT0B66J-_0m20hOH4N2y9EGZ24JlSIZARtSzm-fAf3lxGpClyMmHL6Tk_hHr"/>
+<div class="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-surface/80 backdrop-blur-md flex gap-2">
+<button class="flex-1 bg-white text-black py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-secondary transition-colors">Quick Add</button>
+<button class="bg-white/10 text-white p-3 hover:bg-white hover:text-black transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+</button>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-1">
+<h3 class="font-body font-bold text-lg uppercase tracking-tight">Monolith Tote</h3>
+<span class="font-label text-secondary">$420</span>
+</div>
+<p class="font-label text-xs text-outline tracking-wider uppercase">ACCESSORIES / 12</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Story Section -->
+<section class="bg-surface-container-low py-40 px-6 md:px-12 relative overflow-hidden">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<span class="font-label text-tertiary text-sm tracking-[0.4em] uppercase mb-6 block">Our Ethos</span>
+<h2 class="font-headline text-5xl md:text-7xl font-black uppercase leading-[0.9] mb-8">ARCHITECTS <br/> OF MODERN <br/> ARMOR.</h2>
+<p class="font-body text-xl text-[#C6C6C7] leading-relaxed max-w-lg">
+                        ZARLO is not a fashion brand. It is an exploration of the intersection between industrial design, technical utility, and avant-garde luxury. We create silhouettes for the modern nomad who demands performance and prestige in equal measure.
+                    </p>
+<div class="mt-12">
+<button class="bg-primary text-on-primary px-10 py-4 font-label font-bold tracking-[0.2em] uppercase hover:bg-secondary hover:text-on-secondary transition-all">READ THE MANIFESTO</button>
+</div>
+</div>
+<div class="relative">
+<img alt="Design philosophy" class="w-full grayscale brightness-75" data-alt="Close up of high-end fabric textures and industrial sewing machine in a clean, brightly lit luxury atelier" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBKi20mz9Chsr4qCoperUL3lm4DZH28FtZVKaQNHBwBbO4rfDXaAtg-MAJi25-L-keFsNnzddezTEM1m9LdELXJYZ1Pc0tTWsdoGmK_QyOl_RemVh6JiDU49or7Vm6JubYDFkP_2lPCdfFZEMu-dN3_lQ4AC9fh9BEz6QmeStI74PlKdksbxsAb1kJdxW-TlPBQ0KJRMu6CldQnjXSsII0Fo_9DRJ8okaw6Te4ZlGC_1OzPTEE_Im436rmUIZ68JQdcLTilkuEsomK"/>
+<div class="absolute -bottom-10 -right-10 hidden lg:block">
+<div class="bg-secondary p-12 text-on-secondary w-64 h-64 flex flex-col justify-center items-center text-center">
+<span class="font-headline text-5xl font-black">EST.</span>
+<span class="font-headline text-4xl font-black">2024</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials & IG Feed (Combined Minimal Layout) -->
+<section class="bg-surface py-32 px-6 md:px-12">
+<div class="mb-16 text-center">
+<span class="font-label text-secondary text-sm tracking-[0.4em] uppercase mb-4 block">Community &amp; Feedback</span>
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase">THE VOICES</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
+<div class="bg-surface-container-high p-10 relative">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="format_quote">format_quote</span>
+<p class="font-body text-lg italic text-[#C6C6C7] mb-8">"The structural integrity of their jackets is unmatched. It's the first time I've felt that luxury truly meets technical utility."</p>
+<div>
+<span class="font-label font-bold text-white block uppercase tracking-widest">ARTHUR VAUGHN</span>
+<span class="font-label text-xs text-outline uppercase tracking-tighter">Architectural Designer</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-10 relative">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="format_quote">format_quote</span>
+<p class="font-body text-lg italic text-[#C6C6C7] mb-8">"ZARLO's drop culture is intense but the quality justifies the wait. The materials feel like they will last a lifetime."</p>
+<div>
+<span class="font-label font-bold text-white block uppercase tracking-widest">ELARA MOSS</span>
+<span class="font-label text-xs text-outline uppercase tracking-tighter">Fashion Editor</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-10 relative">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6" data-icon="format_quote">format_quote</span>
+<p class="font-body text-lg italic text-[#C6C6C7] mb-8">"Clean, aggressive, and undeniably premium. Their base layers have become my daily uniform for the city."</p>
+<div>
+<span class="font-label font-bold text-white block uppercase tracking-widest">KAELAN CROSS</span>
+<span class="font-label text-xs text-outline uppercase tracking-tighter">Creative Director</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+<img alt="IG 1" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Instagram style shot of a person wearing luxury sunglasses in front of a concrete building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0UrjxD1Mt9ti9wE4vjJUZSocyXBnLtpCKeObBh9E6t4usSicP8OkndLMQT9y576PX5oxKkjAWWLgVxCr7Tqh7e-tpBBgPBJV1Wi4PA5Gux4uKEQGPHEr_AO5eGUhULMxwWE_KO8lFWG69Gy0y8SaXkS1mai7iXhhg9h9oI5ivoF3Q_NcIQbuuhPr0NWd7-jdNludVDpw_EMMPtdv6vTn9-u2rpWR8avLwZ0woHBm4fZ_JSt2ca8nQIPQQcTzk-97FMoSn85XHHPsw"/>
+<img alt="IG 2" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Close up of luxury leather shoes walking down a modern city street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBEDLqNgCs2nHxGaXnWmQGR585xXEf918jzuWLdxChL2V39Ez5IX4lT4efl7kQ-3Ak1IttDQ90jUEL3bQXW74Dq-iHcEvRRYYU9on0OgeWLf3ovbug_MLWde8JcK7BuPVPaoK6eij9WvWDFhW0AuQpJqdlReKXKmUqXILoYOIpsPQEa2zMgZE-PgKMgLNCbcYxW0OjN3IeOJlX_1ogR48pWNJkp8MbQKtglbzkPOkXqJRrAPmwPJP8D795GtAriezeJhQbRtD9yApT"/>
+<img alt="IG 3" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Fashion model sitting in a high-end furniture showroom wearing minimalist streetwear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC02uoRigUoXSIPI3LJ22iYGNBnrbAsX4sNSFf5LBf2oAAOxsUC4B5O7WxHsRSwNhsVU7tKICqjhvT2yBJaHBD7iXh7sbqcklbip2evD6Lkdlfs20HqwoMVH5trlfAqIOfNqXgnmItEtKDyBF7FeSsHUu36DXVs4JEpvs3sUT7vbzvfkS7RfvVf84C-0nXn8-ZgqSq2sczubJmP891z0vt19pF4UiB-6dCLnN2hME0sQhebd8V_SykABEPMmD0wB-487ma6BwUHyp0H"/>
+<img alt="IG 4" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Portrait of a young man wearing heavy knit ZARLO sweater in low lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu_xtR7DcH_gMZl1hF9iQssErLeH8AhqBps1WtM0XElMydojM478YaRmWom11dx2x7hlu3J_Vqbptp3vpOwC30JfQwbku8HJn7uTkYjO27rO9xlUCB7gCMG6zWv-kLC4a1NZDbwYF5HzWBEMel2-jmz4MqKVDeINjutX5wy-bQE28LQyWZZupNpvMqZQF-n5Cr0zPiJFuOL6LReKQfDjlRIo4L0tqfp5p0aLAjNwY58oTPommInCNJ0jwfmwC_aGqKcsCL5z50Rv5N"/>
+<img alt="IG 5" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="High-contrast shot of a structural coat hanging in a minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-6h-qz4iut_y9-9-0wgCMf2x0fWdKSSmW69XainMBS7QVGVue6LO4wSPNR06ElcRYxRcdfRzJR0m_GYZgWWENRVAuvvZg8rOSBXXgsyyukIpw6Oa7H5dIByZWf-rPqluQtlr-OsDGEiRPU-99k4Ym3qZUYJfZLiJJuiYgkjJgznErCklKu5W1Z3B4vsOva58uMuF4v2A00XXa6cbnBeYibw5xHmnaYjNx1fMBvwO8vdia5UM5x-ddvMl77mfCq_FBzO1SStItH67L"/>
+<img alt="IG 6" class="aspect-square object-cover grayscale hover:grayscale-0 transition-all cursor-pointer" data-alt="Detail shot of high-end fabric with unique technical weaving pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxs3GdFWb2ZHc31Q-F-XLcMCSn4pfYe9tIBLy_O9V_E7sTEqR0knx8vHaW1uJLZyl6C0paX_H93zCBmls3PpFavOghbRYsf-n0Qk_GCe8rX-SPvor39RJ_EhfSAbt2PoaKw2qJAsS8NcBkzvlXRVZQz2fs4sUniOsaXdEHpuIsduWnPPVV7ZtIWR1XXpfa0Pb-GCsa7FlWr5LORxhAovt9wV30QJV7XnbrQhjiNQELUVExsFF0qaSQ_DdVdw1FgwaGY7IwA8vDy8fZ"/>
+</div>
+<div class="mt-8 text-center">
+<a class="font-label text-white/40 hover:text-white transition-colors tracking-widest text-xs uppercase" href="#">Follow @ZARLO_OFFICIAL</a>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="bg-surface-container py-32 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="font-headline text-4xl md:text-6xl font-black uppercase mb-6 tracking-tighter">Join the ZARLO community</h2>
+<p class="font-body text-[#C6C6C7] mb-12 text-lg">Receive early access to limited drops, exclusive events, and the digital flagship archive.</p>
+<form class="flex flex-col md:flex-row gap-0 max-w-2xl mx-auto">
+<input class="flex-1 bg-transparent border-b border-white/20 py-4 font-label text-sm tracking-widest focus:outline-none focus:border-secondary transition-colors uppercase placeholder:text-white/20" placeholder="ENTER YOUR EMAIL" type="email"/>
+<button class="bg-white text-black px-12 py-4 font-label font-bold tracking-[0.2em] uppercase hover:bg-secondary transition-all" type="submit">Subscribe</button>
+</form>
+<div class="mt-6 flex items-center justify-center gap-2 text-[10px] text-white/40 font-label tracking-widest">
+<span class="material-symbols-outlined text-sm" data-icon="shield">shield</span>
+<span>PRIVACY PROTECTED. NO SPAM. JUST LUXURY.</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0E0E0E] w-full py-20 px-12 tonal-shift-from-surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full">
+<div class="md:col-span-1">
+<div class="text-4xl font-black tracking-widest text-white mb-8 font-headline">ZARLO</div>
+<p class="font-['Space_Grotesk'] text-xs tracking-tighter text-[#C6C6C7] max-w-[200px]">
+                    THE DIGITAL FLAGSHIP OF MODERN ARCHITECTURAL LUXURY STREETWEAR.
+                </p>
+</div>
+<div>
+<h4 class="font-headline text-white font-bold text-sm tracking-widest mb-6 uppercase">Collections</h4>
+<ul class="space-y-4 font-['Space_Grotesk'] text-xs tracking-tighter">
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">NEW ARRIVALS</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">MEN'S WEAR</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">WOMEN'S WEAR</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">ACCESSORIES</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-white font-bold text-sm tracking-widest mb-6 uppercase">Support</h4>
+<ul class="space-y-4 font-['Space_Grotesk'] text-xs tracking-tighter">
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">SHIPPING &amp; RETURNS</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">SIZE GUIDE</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">ORDER TRACKING</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">CONTACT</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-white font-bold text-sm tracking-widest mb-6 uppercase">Legal</h4>
+<ul class="space-y-4 font-['Space_Grotesk'] text-xs tracking-tighter">
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">PRIVACY POLICY</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">TERMS OF SERVICE</a></li>
+<li><a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">COOKIES SETTINGS</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<span class="font-['Space_Grotesk'] text-xs tracking-tighter text-[#C6C6C7]">© 2024 ZARLO DIGITAL FLAGSHIP</span>
+<div class="flex gap-8">
+<a class="text-[#C6C6C7] hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="brand_awareness">brand_awareness</span></a>
+<a class="text-[#C6C6C7] hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="camera">camera</span></a>
+<a class="text-[#C6C6C7] hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-xl" data-icon="videocam">videocam</span></a>
+</div>
+</div>
+</footer>
+</body></html>

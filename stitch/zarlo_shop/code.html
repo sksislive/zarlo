@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZARLO | SHOP</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Manrope:wght@400;600&amp;family=Space+Grotesk:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#454747",
+                    "primary": "#c6c6c7",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#e2e2e2",
+                    "on-tertiary-container": "#e71820",
+                    "on-tertiary": "#690005",
+                    "secondary-fixed-dim": "#eac169",
+                    "inverse-primary": "#5d5f5f",
+                    "surface-bright": "#393939",
+                    "on-tertiary-fixed": "#410002",
+                    "secondary-container": "#735500",
+                    "on-surface-variant": "#cfc4c5",
+                    "inverse-surface": "#e2e2e2",
+                    "surface": "#131313",
+                    "error-container": "#93000a",
+                    "primary-container": "#000000",
+                    "on-secondary-fixed": "#261a00",
+                    "surface-container": "#1f1f1f",
+                    "tertiary-container": "#000000",
+                    "on-background": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#93000b",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "surface-tint": "#c6c6c7",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-error": "#690005",
+                    "surface-variant": "#353535",
+                    "surface-container-lowest": "#0e0e0e",
+                    "tertiary-fixed-dim": "#ffb4ab",
+                    "secondary": "#eac169",
+                    "surface-container-highest": "#353535",
+                    "tertiary": "#ffb4ab",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary": "#3f2e00",
+                    "surface-container-low": "#1b1b1b",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#988e90",
+                    "background": "#131313",
+                    "secondary-fixed": "#ffdf9e",
+                    "surface-dim": "#131313",
+                    "on-surface": "#e2e2e2",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-primary-container": "#747576",
+                    "on-secondary-container": "#f5cc72",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "inverse-on-surface": "#303030",
+                    "on-primary": "#2f3131",
+                    "outline-variant": "#4c4546"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Manrope"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-vertical { writing-mode: vertical-rl; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #2a2a2a; }
+        ::-webkit-scrollbar-thumb:hover { background: #eac169; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl flex justify-between items-center px-12 h-24 w-full no-line-boundary tonal-shift">
+<div class="text-2xl font-black tracking-[0.2em] text-white">ZARLO</div>
+<div class="hidden md:flex items-center gap-10 font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7]">
+<a class="text-[#C6C6C7] hover:text-white transition-colors" href="#">MEN</a>
+<a class="text-[#C6C6C7] hover:text-white transition-colors" href="#">WOMEN</a>
+<a class="text-[#EAC169] after:content-[''] after:block after:w-1 after:h-1 after:bg-[#FFB4AB] after:mx-auto" href="#">NEW ARRIVALS</a>
+<a class="text-[#C6C6C7] hover:text-white transition-colors" href="#">COLLECTIONS</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:bg-white/5 transition-all duration-300 p-2 group">
+<span class="material-symbols-outlined text-[#C6C6C7] group-hover:text-white">person</span>
+</button>
+<button class="hover:bg-white/5 transition-all duration-300 p-2 group relative">
+<span class="material-symbols-outlined text-[#C6C6C7] group-hover:text-white">shopping_cart</span>
+<span class="absolute top-1 right-1 w-1.5 h-1.5 bg-tertiary"></span>
+</button>
+</div>
+</nav>
+<main class="pt-24 min-h-screen flex">
+<!-- Sidebar Filters -->
+<aside class="hidden lg:flex flex-col w-80 fixed left-0 top-24 bottom-0 bg-surface-container-lowest border-r border-white/5 px-12 py-12 overflow-y-auto">
+<div class="mb-12">
+<h3 class="font-headline font-black uppercase tracking-widest text-white text-xs mb-8">CATEGORY</h3>
+<div class="space-y-4 font-label text-xs tracking-widest text-primary">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-none bg-surface-container border-outline-variant text-secondary focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="group-hover:text-white transition-colors">OUTERWEAR (12)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-none bg-surface-container border-outline-variant text-secondary focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="group-hover:text-white transition-colors">KNITWEAR (08)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-4 h-4 rounded-none bg-surface-container border-outline-variant text-secondary focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="text-white">FOOTWEAR (24)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-4 h-4 rounded-none bg-surface-container border-outline-variant text-secondary focus:ring-0 focus:ring-offset-0" type="checkbox"/>
+<span class="group-hover:text-white transition-colors">ACCESSORIES (16)</span>
+</label>
+</div>
+</div>
+<div class="mb-12">
+<h3 class="font-headline font-black uppercase tracking-widest text-white text-xs mb-8">SIZE</h3>
+<div class="grid grid-cols-3 gap-2 font-label text-xs">
+<button class="py-3 border border-outline-variant hover:border-secondary transition-colors">XS</button>
+<button class="py-3 border border-outline-variant hover:border-secondary transition-colors">S</button>
+<button class="py-3 border border-secondary text-secondary">M</button>
+<button class="py-3 border border-outline-variant hover:border-secondary transition-colors">L</button>
+<button class="py-3 border border-outline-variant hover:border-secondary transition-colors">XL</button>
+<button class="py-3 border border-outline-variant text-outline-variant cursor-not-allowed">XXL</button>
+</div>
+</div>
+<div class="mb-12">
+<h3 class="font-headline font-black uppercase tracking-widest text-white text-xs mb-8">PRICE RANGE</h3>
+<div class="space-y-6">
+<input class="w-full h-1 bg-surface-container-high appearance-none cursor-pointer accent-secondary" type="range"/>
+<div class="flex justify-between font-label text-[10px] text-primary tracking-widest">
+<span>$100</span>
+<span>$2,500</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline font-black uppercase tracking-widest text-white text-xs mb-8">COLOR</h3>
+<div class="flex flex-wrap gap-4">
+<button class="w-6 h-6 bg-black border border-outline ring-2 ring-offset-2 ring-offset-background ring-secondary"></button>
+<button class="w-6 h-6 bg-white border border-outline"></button>
+<button class="w-6 h-6 bg-[#2A2A2A] border border-outline"></button>
+<button class="w-6 h-6 bg-[#EAC169] border border-outline"></button>
+<button class="w-6 h-6 bg-[#FFB4AB] border border-outline"></button>
+</div>
+</div>
+</aside>
+<!-- Product Grid Content -->
+<section class="flex-1 lg:ml-80 px-12 py-12">
+<!-- Header & Sorting -->
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+<div>
+<h1 class="font-headline font-black text-6xl tracking-tighter uppercase text-white mb-2">NEW ARRIVALS</h1>
+<p class="font-label text-sm tracking-widest text-primary uppercase">CURATED DROPS / SEASON 04</p>
+</div>
+<div class="flex items-center gap-8 border-b border-outline-variant pb-2 min-w-[200px]">
+<span class="font-label text-[10px] text-primary tracking-widest">SORT BY</span>
+<select class="bg-transparent border-none focus:ring-0 font-label text-xs text-white uppercase tracking-widest appearance-none cursor-pointer p-0 pr-8">
+<option>NEWEST RELEASES</option>
+<option>PRICE HIGH-LOW</option>
+<option>PRICE LOW-HIGH</option>
+<option>MOST POPULAR</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-20 gap-x-12">
+<!-- Product Card 1 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Avant-garde black oversized techwear hoodie on a minimalist grey pedestal with high-contrast dramatic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuJsjSQBcJ6grQoJOzGTVfR6dW4cUy5S9IwDrutLOKXQV0SS1hEme9TXdk4Fba8bUvZfE4lJHTVNkMqLGtXmSpYf6ykqXBFhHx0RomRCwt8cFZYSLaLAUgEo6mjCkcsp_XCtvAphXvOXQ2UDeMdq5PcNGPFBDDIjHmA74i_LEyS7AIErLIfxNziyPwQ-Bj_ZARqZ3zdu9w9no2MnI7UkoXokHzHPekWHuWo5ChyNU6gvAQr6ItaF6r4_lzzmcpe7IfNXQEKBA-UYra"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="absolute bottom-0 left-0 right-0 p-1 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-surface/90 backdrop-blur-md text-white font-label text-[10px] tracking-[0.3em] py-4 uppercase hover:bg-secondary hover:text-black transition-colors">
+                                QUICK ADD / SELECT SIZE
+                            </button>
+</div>
+<span class="absolute top-6 right-6 font-label text-[10px] text-white bg-tertiary px-3 py-1 uppercase tracking-widest">Limited Edition</span>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg uppercase text-white tracking-tight">Onyx Modular Shell</h3>
+<p class="font-body text-sm text-primary">Outerwear / Series 04</p>
+</div>
+<span class="font-label text-lg text-secondary">$840.00</span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Minimalist white high-top designer sneakers presented in a sharp geometric architectural setting with harsh shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJvP7FuboeduLVNhZ5h_5kCNQSvTpFZOQ-rFcLgVJXn6tO3BvD9BQ2Zba7TTcjOx1Y3Il4j85ZSc5ex3rGrDW8BkOoLnbHqe4IKtKeMQB7NaH_k6Ck6AvW0KLaak6fi_DdIyoF-jSEAiVJSW1mS7LIOPoKUnyugdOf5wmv46Nbk6ylGv9xWWeAMFcjRtAXGT7f-QuMN9WD8wOfukGK-kM8Th1oRhTztmY4Q0kzUr3FsTEXheFbMqVwaHPaFCR5pvzwhKLUz7sIxMg5"/>
+<div class="absolute bottom-0 left-0 right-0 p-1 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-surface/90 backdrop-blur-md text-white font-label text-[10px] tracking-[0.3em] py-4 uppercase hover:bg-secondary hover:text-black transition-colors">
+                                QUICK ADD / SELECT SIZE
+                            </button>
+</div>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg uppercase text-white tracking-tight">Vortex High-Top</h3>
+<p class="font-body text-sm text-primary">Footwear / White Leather</p>
+</div>
+<span class="font-label text-lg text-secondary">$520.00</span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Editorial fashion shot of a model wearing a heavy black textured knit sweater in a stark brutalist concrete environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2t838FKTi-twmo-AC2ehwLkcN7PSq3gS4K4FKiP9NHEkXxqFLnI3FqjoxJbh3sUlK32swAUBZ3uO7tCqni4EcXBTDddBQst9ZtcnNgnv6g7X_KOqL6m5y_44en-Uth-ZmdsWXT9-xgfytEi-qbA_Jzc8E3BbCDUwtYYqllPZyUHwpcbwKUgHqQJP-hDk2Y1F5jzV06UQ6Pijt_uYnn1TqffymvlLSfBhf9ekHNXT9n76fvVUJIHUHp7q9i5sP6v8FZMjnqtikT0xd"/>
+<div class="absolute bottom-0 left-0 right-0 p-1 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-surface/90 backdrop-blur-md text-white font-label text-[10px] tracking-[0.3em] py-4 uppercase hover:bg-secondary hover:text-black transition-colors">
+                                QUICK ADD / SELECT SIZE
+                            </button>
+</div>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg uppercase text-white tracking-tight">Knit Heavy Rib</h3>
+<p class="font-body text-sm text-primary">Knitwear / Dark Grey</p>
+</div>
+<span class="font-label text-lg text-secondary">$310.00</span>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Matte black high-performance bicycle parked against a dark textured wall with golden accent lighting on the frame" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlMbD-E_wFXEbIEv5oWx8LSALNujgPvYVyouHh3PEyM7jZ2Ro-m0aVYQDHLJClbbl5nRTlvYPUk2AubOGoPdjL5LpAQ33b-I61K-0fsgm8LL1s_LjitfFbSOMgTJ8C8HZyeioIvCf-Y0syB7z18EFUDLU84mbVyOHpbmLAgqUkKO6xtgGKWtumMfS4vnlLQIGh5A9ZdaQ0enzk-Z_ILmIdhChLtfGYX_PjmIBkwnjww_vqliIRWHGI4HDzqobTrecHGmnn_-vZ4m-6"/>
+<div class="absolute bottom-0 left-0 right-0 p-1 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-surface/90 backdrop-blur-md text-white font-label text-[10px] tracking-[0.3em] py-4 uppercase hover:bg-secondary hover:text-black transition-colors">
+                                QUICK ADD / SELECT SIZE
+                            </button>
+</div>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg uppercase text-white tracking-tight">Aero Frame Stealth</h3>
+<p class="font-body text-sm text-primary">Accessories / Mobility</p>
+</div>
+<span class="font-label text-lg text-secondary">$2,100.00</span>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Luxury black leather backpack with metallic gold hardware detail close up shot with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWRh3uCLfCBXGCz6xbm9dSCPZgJuafdg79GyCZHtUN3tje2HeB2VsicJe-BGlfVymYKFpbEzXi-5-lzCxO_G5Kl3Q64Ol_BrEH5BQHjWkTOjdbqJIH8glcUlYUmr_JmDZy4OqfuK3HiJGEiz-cfUUVMfA55Rx5s5Hz4ujQQq5vs4YSbtEwtD2HY9NlcXInwgS_-Jv4J5Jx5ukT9pV4IYxtyvEfzHibgjXXAhSr8zD4PKIM2q1KUatbebVPUFJoyLlZX_uyU8SXK-49"/>
+<div class="absolute bottom-0 left-0 right-0 p-1 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-surface/90 backdrop-blur-md text-white font-label text-[10px] tracking-[0.3em] py-4 uppercase hover:bg-secondary hover:text-black transition-colors">
+                                QUICK ADD / SELECT SIZE
+                            </button>
+</div>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg uppercase text-white tracking-tight">Cargo Pack VII</h3>
+<p class="font-body text-sm text-primary">Accessories / Luggage</p>
+</div>
+<span class="font-label text-lg text-secondary">$450.00</span>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale brightness-90 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" data-alt="Close up of black silk technical shirt with precise industrial stitching and subtle sheen under cool neon lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5U6ZQZgNJdVqpl2OeB91DSfn62lwNfdJtrYSx1c2E-ibCiEPIx299UT91Iw8APWcxRHmUI-JtQew9bqJoRBSe47rR2E03Jh03on8EUBENGAQROJf4IqBix7e9IN0JWZDx8dLzk8FGYvLZfTScJfe7GHIqLWDCnFdTBdgw2gDO-J5cXu80k5P8crOq5GgQWDof1-lKa5Td4WLcjYgxKxzx6J-zsgPregulAW88pXQpaBLdMOygN7kI7q0mzkSne-kwpsmCuEKXL0Ur"/>
+<div class="absolute bottom-0 left-0 right-0 p-1 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<button class="w-full bg-surface/90 backdrop-blur-md text-white font-label text-[10px] tracking-[0.3em] py-4 uppercase hover:bg-secondary hover:text-black transition-colors">
+                                QUICK ADD / SELECT SIZE
+                            </button>
+</div>
+<span class="absolute top-6 right-6 font-label text-[10px] text-white bg-error px-3 py-1 uppercase tracking-widest">Sold Out</span>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg uppercase text-white tracking-tight">Apex Silk Shirt</h3>
+<p class="font-body text-sm text-primary">Tops / Technical Silk</p>
+</div>
+<span class="font-label text-lg text-outline-variant line-through">$220.00</span>
+</div>
+</div>
+</div>
+<!-- Pagination (Minimalist) -->
+<div class="mt-32 flex justify-between items-center border-t border-outline-variant pt-12 font-label text-xs tracking-[0.3em] text-primary">
+<button class="hover:text-secondary transition-colors uppercase">PREVIOUS</button>
+<div class="flex gap-8">
+<button class="text-white">01</button>
+<button class="hover:text-white transition-colors">02</button>
+<button class="hover:text-white transition-colors">03</button>
+<span class="text-outline-variant">...</span>
+<button class="hover:text-white transition-colors">12</button>
+</div>
+<button class="hover:text-secondary transition-colors uppercase">NEXT</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 bg-[#0E0E0E] tonal-shift-from-surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full">
+<div class="md:col-span-1">
+<div class="text-4xl font-black tracking-widest text-white mb-8">ZARLO</div>
+<p class="font-body text-sm text-primary max-w-xs leading-relaxed">Defining the intersection of brutalist architecture and technical sportswear. Digital Flagship Concept.</p>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-black text-xs tracking-widest text-white uppercase">NAVIGATION</h4>
+<nav class="flex flex-col gap-3 font-['Space_Grotesk'] text-xs tracking-tighter text-[#C6C6C7]">
+<a class="hover:text-[#EAC169] transition-colors" href="#">COLLECTIONS</a>
+<a class="hover:text-[#EAC169] transition-colors" href="#">ABOUT THE HOUSE</a>
+<a class="hover:text-[#EAC169] transition-colors" href="#">ARCHIVE</a>
+<a class="hover:text-[#EAC169] transition-colors" href="#">SUSTAINABILITY</a>
+</nav>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-black text-xs tracking-widest text-white uppercase">LEGAL</h4>
+<nav class="flex flex-col gap-3 font-['Space_Grotesk'] text-xs tracking-tighter text-[#C6C6C7]">
+<a class="hover:text-[#EAC169] transition-colors" href="#">PRIVACY POLICY</a>
+<a class="hover:text-[#EAC169] transition-colors" href="#">TERMS OF SERVICE</a>
+<a class="hover:text-[#EAC169] transition-colors" href="#">SHIPPING &amp; RETURNS</a>
+<a class="hover:text-[#EAC169] transition-colors" href="#">CONTACT</a>
+</nav>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-black text-xs tracking-widest text-white uppercase">NEWSLETTER</h4>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-outline-variant py-3 text-xs font-label tracking-widest focus:border-secondary focus:ring-0 outline-none placeholder:text-outline-variant" placeholder="ENTER YOUR EMAIL" type="email"/>
+<button class="absolute right-0 bottom-3">
+<span class="material-symbols-outlined text-secondary">arrow_forward</span>
+</button>
+</div>
+<p class="text-[10px] text-outline-variant font-label tracking-widest">BE THE FIRST TO RECEIVE EXCLUSIVE DROPS.</p>
+</div>
+</div>
+<div class="mt-20 flex flex-col md:flex-row justify-between items-center border-t border-white/5 pt-12 gap-8">
+<span class="font-['Space_Grotesk'] text-xs tracking-tighter text-[#C6C6C7]">© 2024 ZARLO DIGITAL FLAGSHIP</span>
+<div class="flex gap-12 font-label text-[10px] tracking-widest text-primary">
+<a class="hover:text-white transition-colors" href="#">INSTAGRAM</a>
+<a class="hover:text-white transition-colors" href="#">TWITTER</a>
+<a class="hover:text-white transition-colors" href="#">VIMEO</a>
+</div>
+</div>
+</footer>
+</body></html>

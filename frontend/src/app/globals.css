@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-primary-fixed-variant: #454747;
+  --color-primary: #c6c6c7;
+  --color-error: #ffb4ab;
+  --color-primary-fixed: #e2e2e2;
+  --color-on-tertiary-container: #e71820;
+  --color-on-tertiary: #690005;
+  --color-secondary-fixed-dim: #eac169;
+  --color-inverse-primary: #5d5f5f;
+  --color-surface-bright: #393939;
+  --color-on-tertiary-fixed: #410002;
+  --color-secondary-container: #735500;
+  --color-on-surface-variant: #cfc4c5;
+  --color-inverse-surface: #e2e2e2;
+  --color-surface: #131313;
+  --color-error-container: #93000a;
+  --color-primary-container: #000000;
+  --color-on-secondary-fixed: #261a00;
+  --color-surface-container: #1f1f1f;
+  --color-tertiary-container: #000000;
+  --color-on-background: #e2e2e2;
+  --color-on-tertiary-fixed-variant: #93000b;
+  --color-primary-fixed-dim: #c6c6c7;
+  --color-surface-tint: #c6c6c7;
+  --color-tertiary-fixed: #ffdad6;
+  --color-on-error: #690005;
+  --color-surface-variant: #353535;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-tertiary-fixed-dim: #ffb4ab;
+  --color-secondary: #eac169;
+  --color-surface-container-highest: #353535;
+  --color-tertiary: #ffb4ab;
+  --color-surface-container-high: #2a2a2a;
+  --color-on-secondary: #3f2e00;
+  --color-surface-container-low: #1b1b1b;
+  --color-on-error-container: #ffdad6;
+  --color-outline: #988e90;
+  --color-background: #131313;
+  --color-secondary-fixed: #ffdf9e;
+  --color-surface-dim: #131313;
+  --color-on-surface: #e2e2e2;
+  --color-on-primary-fixed: #1a1c1c;
+  --color-on-primary-container: #747576;
+  --color-on-secondary-container: #f5cc72;
+  --color-on-secondary-fixed-variant: #5b4300;
+  --color-inverse-on-surface: #303030;
+  --color-on-primary: #2f3131;
+  --color-outline-variant: #4c4546;
+
+  --font-headline: 'Epilogue', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-label: 'Space Grotesk', sans-serif;
+}
+
+@layer base {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

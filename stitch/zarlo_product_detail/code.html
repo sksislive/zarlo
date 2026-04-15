@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Manrope:wght@400;600&amp;family=Space+Grotesk:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#454747",
+                    "primary": "#c6c6c7",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#e2e2e2",
+                    "on-tertiary-container": "#e71820",
+                    "on-tertiary": "#690005",
+                    "secondary-fixed-dim": "#eac169",
+                    "inverse-primary": "#5d5f5f",
+                    "surface-bright": "#393939",
+                    "on-tertiary-fixed": "#410002",
+                    "secondary-container": "#735500",
+                    "on-surface-variant": "#cfc4c5",
+                    "inverse-surface": "#e2e2e2",
+                    "surface": "#131313",
+                    "error-container": "#93000a",
+                    "primary-container": "#000000",
+                    "on-secondary-fixed": "#261a00",
+                    "surface-container": "#1f1f1f",
+                    "tertiary-container": "#000000",
+                    "on-background": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#93000b",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "surface-tint": "#c6c6c7",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-error": "#690005",
+                    "surface-variant": "#353535",
+                    "surface-container-lowest": "#0e0e0e",
+                    "tertiary-fixed-dim": "#ffb4ab",
+                    "secondary": "#eac169",
+                    "surface-container-highest": "#353535",
+                    "tertiary": "#ffb4ab",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary": "#3f2e00",
+                    "surface-container-low": "#1b1b1b",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#988e90",
+                    "background": "#131313",
+                    "secondary-fixed": "#ffdf9e",
+                    "surface-dim": "#131313",
+                    "on-surface": "#e2e2e2",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-primary-container": "#747576",
+                    "on-secondary-container": "#f5cc72",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "inverse-on-surface": "#303030",
+                    "on-primary": "#2f3131",
+                    "outline-variant": "#4c4546"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Manrope"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e2e2e2;
+            font-family: 'Manrope', sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl flex justify-between items-center px-12 h-24 w-full no-line-boundary tonal-shift">
+<div class="text-2xl font-black tracking-[0.2em] text-white font-headline">ZARLO</div>
+<div class="hidden md:flex gap-10">
+<a class="font-headline uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">MEN</a>
+<a class="font-headline uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">WOMEN</a>
+<a class="font-headline uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">NEW ARRIVALS</a>
+<a class="font-headline uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">COLLECTIONS</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="p-2 hover:bg-white/5 transition-all duration-300">
+<span class="material-symbols-outlined text-[#C6C6C7]" data-icon="search">search</span>
+</button>
+<button class="p-2 hover:bg-white/5 transition-all duration-300">
+<span class="material-symbols-outlined text-[#C6C6C7]" data-icon="person">person</span>
+</button>
+<button class="p-2 hover:bg-white/5 transition-all duration-300 relative">
+<span class="material-symbols-outlined text-[#C6C6C7]" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-tertiary"></span>
+</button>
+</div>
+</nav>
+<main class="pt-24 min-h-screen">
+<!-- Product Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-0">
+<!-- Gallery (Left) -->
+<div class="md:col-span-7 grid grid-cols-1 gap-2">
+<img class="w-full aspect-[4/5] object-cover bg-surface-container-low" data-alt="high-end editorial streetwear photography of a charcoal wool oversized coat on a model in a minimalist concrete architectural setting with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClUaihvbV_UxseHKnEwAyAlABxfFiWK8kYve-xMTkWwkAToUToL2GVKqiHmWr2iabL7B3g9WJJCCrH16Gf_jYQa_hM6KkFu4fWiguwQs4yMh67w81ivyA9iaZnX3p-bmUGoMbyqbWB2ArrZ0I9iecFYv3BPTpDtcCHzkRlyrp1UIA6jtNbO7AHPKFrPrt5GqUe8tZL5IZVK5qf5dQnxa-ReRCFD3ltxYNnQMqBzL1-Q7I7KtMleT2_Qy-_PM9FCJUtDd_j-SQc__ji"/>
+<div class="grid grid-cols-2 gap-2">
+<img class="w-full aspect-square object-cover bg-surface-container-low" data-alt="close-up detail of premium charcoal wool fabric texture and reinforced stitching on a luxury streetwear garment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp_PBV3h2zcMyFV_y2SuadngSG8j7eZpxEEu6IceT4JF8c6bG8FOItClPRfNX99NW-udGc7YxnVqEn2VyeQsc21mrONT_G6j7hw2wo_XjjcO13yulLogkbAvepzhRPDBDlmEpIVeTqNu_5f9WIYWwl8LdfpnrQ1_Rpr8NexQeMjL0ONDZ9DellR8kPlALkSiygTkOq-HG5VZXsx94w2Vctxw-UTxyEDRV2fyipT4k4QlHDP7iAARsOFCjT8ckEP6f12rmRNl-fMmVZ"/>
+<img class="w-full aspect-square object-cover bg-surface-container-low" data-alt="low angle shot of a model wearing an oversized charcoal coat walking away through a brutalist corridor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBksf0jg_JSPNAAkrdRPhRaf2W_e_dmCfYZaVJteNmkHLU_5ii4KjGsVjqnQCzbcON85lR5sACDSasMgKT3MSMm8tOz4LXJvtJggnUJou7O9pNU-O-l7lZagzA2fL3sSoUIRYieghcvexpo5m3DxISRQiMYpLZl4YO3PG8-F5YpvhpSY9NZkzsynKUx_q-gn71N_4bR0mxm2BF3S-wS6AhiV5XgTf0RMs1bCLplxodn04z6fEInUtunoPYbwv3VE9vxTvU42KCM7CAK"/>
+</div>
+<img class="w-full aspect-[4/5] object-cover bg-surface-container-low" data-alt="full body silhouette shot of a luxury streetwear outfit against a high contrast bright white backlight in a studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSy6mOTR8C5xWvTpvUUO4zf7f-2uUg-HQSblst2sDsklwjf7hvuGiOEqe5hie66K4XxfOLsuw3CadGDDG1D1h9GaoY1R2nRpv7JYlsDtvlZIhFC7GmcnYdxTZwfJuYd-4tH0JpYZsN4d9sXGWJ95jPT4FZDqhKzMtRdEP6Nez19J3T28-DyBw56IV9puc0xqn7AxYk14aWdwbXGP9yLnkF7ESbsJ1Ca874Uda5el-TsnHbzjILyfynaxjwVydQoX9S_KiEhv294_go"/>
+</div>
+<!-- Product Details (Right) -->
+<div class="md:col-span-5 px-8 md:px-16 py-12 md:sticky md:top-24 h-fit">
+<div class="flex flex-col gap-8">
+<header>
+<span class="font-label text-xs tracking-widest text-primary uppercase mb-4 block">COLLECTION 04 // CORE ARCHIVE</span>
+<h1 class="font-headline text-5xl md:text-6xl font-black tracking-tighter uppercase leading-none mb-4">ARCHITECT OVERCOAT</h1>
+<p class="font-label text-3xl text-secondary font-bold tracking-tight">$1,450.00</p>
+</header>
+<!-- Size Selector -->
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<span class="font-label text-xs tracking-widest uppercase">SELECT SIZE</span>
+<button class="font-label text-[10px] tracking-widest underline text-primary">SIZE GUIDE</button>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<button class="h-14 flex items-center justify-center border border-outline-variant hover:border-secondary transition-colors font-label text-sm">XS</button>
+<button class="h-14 flex items-center justify-center border border-outline-variant hover:border-secondary transition-colors font-label text-sm">S</button>
+<button class="h-14 flex items-center justify-center bg-white text-black font-bold font-label text-sm">M</button>
+<button class="h-14 flex items-center justify-center border border-outline-variant hover:border-secondary transition-colors font-label text-sm">L</button>
+<button class="h-14 flex items-center justify-center border border-outline-variant hover:border-secondary transition-colors font-label text-sm">XL</button>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4">
+<button class="w-full bg-secondary text-on-secondary h-20 font-headline font-black uppercase tracking-widest text-lg hover:bg-white hover:text-black transition-all active:scale-[0.98]">
+                            ADD TO CART
+                        </button>
+<button class="w-full border border-outline-variant h-20 font-headline font-black uppercase tracking-widest text-lg flex items-center justify-center gap-2 hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+                            WISH LIST
+                        </button>
+</div>
+<!-- Tabs/Accordions -->
+<div class="mt-8 flex flex-col gap-12">
+<div class="bg-surface-container-low p-8">
+<h3 class="font-headline font-bold text-sm tracking-widest mb-4 uppercase">DESCRIPTION</h3>
+<p class="font-body text-primary leading-relaxed">
+                                A monolithic silhouette engineered from double-faced Italian virgin wool. The Architect Overcoat features dropped shoulders, hidden magnet closures, and internal utility webbing. Designed to provide maximum volume while maintaining structural integrity.
+                            </p>
+</div>
+<div class="bg-surface-container-high p-8 border-l-4 border-tertiary">
+<h3 class="font-headline font-bold text-sm tracking-widest mb-4 uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="style">style</span>
+                                STYLING TIPS
+                            </h3>
+<ul class="font-body text-primary space-y-4 list-disc pl-4">
+<li>Layer over a tonal technical hoodie for a high-contrast texture play.</li>
+<li>Pair with wide-leg bonded jersey trousers to emphasize the architectural volume.</li>
+<li>Style open with a graphic base layer for a relaxed editorial aesthetic.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="py-32 px-12 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="font-headline text-4xl font-black tracking-tighter uppercase mb-2">COMMUNITY FEEDBACK</h2>
+<div class="flex items-center gap-4">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="font-label text-xs tracking-widest text-primary uppercase">4.8 AVERAGE RATING</span>
+</div>
+</div>
+<button class="font-label text-xs tracking-widest text-white uppercase border-b-2 border-secondary pb-1">WRITE A REVIEW</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<div class="bg-surface p-12 flex flex-col gap-6">
+<div class="flex justify-between">
+<span class="font-label text-xs font-bold tracking-widest uppercase">MARCUS V.</span>
+<span class="font-label text-[10px] text-outline uppercase">VERIFIED PURCHASE</span>
+</div>
+<p class="font-body text-lg italic leading-relaxed text-on-surface">"The weight of this wool is incredible. It feels more like an investment piece than just another garment. The sharp edges are truly brutalist."</p>
+<div class="font-label text-[10px] tracking-widest text-primary uppercase">OCT 14, 2024</div>
+</div>
+<div class="bg-surface p-12 flex flex-col gap-6 border-l md:border-l-0 md:border-x border-outline-variant/10">
+<div class="flex justify-between">
+<span class="font-label text-xs font-bold tracking-widest uppercase">ELENA K.</span>
+<span class="font-label text-[10px] text-outline uppercase">VERIFIED PURCHASE</span>
+</div>
+<p class="font-body text-lg italic leading-relaxed text-on-surface">"Perfect oversized fit. Usually, these silhouettes swallow me, but the tailoring here keeps it looking premium and intentional."</p>
+<div class="font-label text-[10px] tracking-widest text-primary uppercase">SEP 28, 2024</div>
+</div>
+<div class="bg-surface p-12 flex flex-col gap-6">
+<div class="flex justify-between">
+<span class="font-label text-xs font-bold tracking-widest uppercase">JORDAN T.</span>
+<span class="font-label text-[10px] text-outline uppercase">VERIFIED PURCHASE</span>
+</div>
+<p class="font-body text-lg italic leading-relaxed text-on-surface">"The magnetic closures are a game changer. Super sleek look. Worth every cent for the craftsmanship."</p>
+<div class="font-label text-[10px] tracking-widest text-primary uppercase">SEP 22, 2024</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete the Look -->
+<section class="py-32 px-12">
+<h2 class="font-headline text-4xl font-black tracking-tighter uppercase mb-16 text-center">COMPLETE THE LOOK</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="monochrome streetwear trousers in technical black nylon with exaggerated pocket details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxq2fqDzDvFeBtgbu7SE9zKbI1mD1O-E-4tcjgwDNNgAGEprI69mfQzJyDhTP9aJo9dW4TBmr3FmeGLm4nNmjkCzuYjre_ci21V0CXWvFfYtPXLeqP31i7Z6gTrTfz30HKt__I0LX0UWJvwkfKVQXC9hkO1970NqZC_La4_9mE7U0vaKnlVVJCuVSFQwsl8oBp_mn9K87LUQM3HuJQSgoB1u1o7MTEhVjNg0UAR8pZVj254OEMMkwfwNa4wR-qeOCe9oYmVqW47m8U"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-label text-xs tracking-widest uppercase text-white">CARGO TROUSERS</h4>
+<p class="font-label text-[10px] text-primary mt-1">BLACK NYLON</p>
+</div>
+<p class="font-label text-xs text-secondary font-bold">$420</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="heavyweight boxy fit hoodie in charcoal grey with minimal tonal logo embroidery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwU36Ryeq0OJtlAQs0M87mfitjnuHGmROhAknjd4wnxBWgVzWOOzJ5G_epn8Z2Ka5xhvDB8YtGpmLgWVij53NTxK5y2vh015ChZEx55IjYLxOGxilafvdhGvSHpoA7Kx-QZ5xQyu8KZYclDObrVRSd2q5RzoVUnEsfilxwyRWZt-X86HWchG03r-V3_HeprU4DqgNlWzVKgL-vSQ_CXlUHtu6_tr02dCjbczz5dUSQ6iv1NvWvWLcfdLYNnHnPDaIrUWzexQBMCsMa"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-label text-xs tracking-widest uppercase text-white">BOXY HOODIE</h4>
+<p class="font-label text-[10px] text-primary mt-1">CORE JERSEY</p>
+</div>
+<p class="font-label text-xs text-secondary font-bold">$380</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="chunky lug sole boots in matte black leather with silver hardware and technical lacing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0H90qQwOf_uzhCOWthpXOXT5gw8QkCAA-DLjNmmryKisDYCRS92qspOwRyID2lY-Y69sxSljvGcaUQXp4p9Jkwv_BPo8hNYKr9bHGHTLjxVTXH_79fkcN225vPozte1T445CDH0m3-yb-rd_zFMtUhWYTjohsqxq3vblcwCiCfNNn_6Z20Ge4YcnkyyoEwIPOm9HpWmUFUyJlPKwEoZKwuu-6Oxu_2wpPltrgiWAqRGCW-HlZo1cAk3B0evuhzEI_bGDPE3Avhky9"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-label text-xs tracking-widest uppercase text-white">MONOLITH BOOT</h4>
+<p class="font-label text-[10px] text-primary mt-1">MATTE LEATHER</p>
+</div>
+<p class="font-label text-xs text-secondary font-bold">$890</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="luxury streetwear belt bag in semi-transparent ripstop nylon with industrial buckle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIS78LQJyuF5glfWtm0TnJhPK18VmxgPjKm8IjQJ6WQ6KWVQwwjK0GwXzTMFKhWodUArL2kk9lRr-nWa4mfSRZu6A1Er8CXXLKulCkbmvjp31ChN8xNtS_SSosyqRebbKD2LN0M5D5vh0o-p3gU_P5vfnGMI5NcJuVyVxB3wleXHJPPxNDPwVCdlN0QfA3FYIWynBlph5wiryMaoKU2HnKqCE1Dz43wkyeIkNFNFZSHPC5l6r8LC3KtBmjPNk9Tr3b-1gFteCjlIWC"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-label text-xs tracking-widest uppercase text-white">UTILITY POUCH</h4>
+<p class="font-label text-[10px] text-primary mt-1">RIPSTOP BLACK</p>
+</div>
+<p class="font-label text-xs text-secondary font-bold">$250</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 bg-[#0E0E0E] tonal-shift-from-surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full">
+<div class="md:col-span-1">
+<div class="text-4xl font-black tracking-widest text-white mb-8 font-headline">ZARLO</div>
+<p class="font-label text-xs text-[#C6C6C7] leading-relaxed max-w-xs">
+                    ARCHITECTURAL STREETWEAR ENGINEERED FOR THE MODERN ICONOCLAST.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label text-sm font-bold tracking-widest text-white uppercase mb-2">SHOP</h5>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">NEW DROPS</a>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">BESTSELLERS</a>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">ARCHIVE</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label text-sm font-bold tracking-widest text-white uppercase mb-2">SUPPORT</h5>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">SHIPPING &amp; RETURNS</a>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">CONTACT</a>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">PRIVACY POLICY</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-label text-sm font-bold tracking-widest text-white uppercase mb-2">NEWSLETTER</h5>
+<p class="font-label text-xs text-[#C6C6C7] mb-4">JOIN THE INNER CIRCLE FOR EARLY ACCESS.</p>
+<div class="relative">
+<input class="w-full bg-transparent border-b border-outline-variant py-2 font-label text-xs focus:border-secondary outline-none text-white" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="absolute right-0 bottom-2 text-secondary">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label text-xs tracking-tighter text-[#C6C6C7]">© 2024 ZARLO DIGITAL FLAGSHIP</span>
+<div class="flex gap-8">
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">INSTAGRAM</a>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">TWITTER</a>
+<a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">TIKTOK</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Manrope:wght@400;500;700&amp;family=Space+Grotesk:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#454747",
+                        "primary": "#c6c6c7",
+                        "error": "#ffb4ab",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-container": "#e71820",
+                        "on-tertiary": "#690005",
+                        "secondary-fixed-dim": "#eac169",
+                        "inverse-primary": "#5d5f5f",
+                        "surface-bright": "#393939",
+                        "on-tertiary-fixed": "#410002",
+                        "secondary-container": "#735500",
+                        "on-surface-variant": "#cfc4c5",
+                        "inverse-surface": "#e2e2e2",
+                        "surface": "#131313",
+                        "error-container": "#93000a",
+                        "primary-container": "#000000",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-container": "#1f1f1f",
+                        "tertiary-container": "#000000",
+                        "on-background": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#93000b",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "surface-tint": "#c6c6c7",
+                        "tertiary-fixed": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-variant": "#353535",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed-dim": "#ffb4ab",
+                        "secondary": "#eac169",
+                        "surface-container-highest": "#353535",
+                        "tertiary": "#ffb4ab",
+                        "surface-container-high": "#2a2a2a",
+                        "on-secondary": "#3f2e00",
+                        "surface-container-low": "#1b1b1b",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#988e90",
+                        "background": "#131313",
+                        "secondary-fixed": "#ffdf9e",
+                        "surface-dim": "#131313",
+                        "on-surface": "#e2e2e2",
+                        "on-primary-fixed": "#1a1c1c",
+                        "on-primary-container": "#747576",
+                        "on-secondary-container": "#f5cc72",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "inverse-on-surface": "#303030",
+                        "on-primary": "#2f3131",
+                        "outline-variant": "#4c4546"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e2e2e2;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px #4c4546;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl flex justify-between items-center px-12 h-24 w-full">
+<div class="text-2xl font-black tracking-[0.2em] text-white font-headline">ZARLO</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">MEN</a>
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">WOMEN</a>
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">NEW ARRIVALS</a>
+<a class="font-['Epilogue'] uppercase tracking-[0.1em] text-sm text-[#C6C6C7] hover:text-white transition-colors" href="#">COLLECTIONS</a>
+</div>
+<div class="flex items-center gap-8">
+<button class="material-symbols-outlined text-white hover:text-secondary transition-colors" data-icon="search">search</button>
+<button class="material-symbols-outlined text-white hover:text-secondary transition-colors" data-icon="person">person</button>
+<button class="material-symbols-outlined text-white hover:text-secondary transition-colors" data-icon="shopping_cart">shopping_cart</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Editorial Boldness -->
+<section class="relative h-[921px] flex items-center overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 opacity-60">
+<img alt="About Zarlo" class="w-full h-full object-cover grayscale" data-alt="high-fashion model in architectural streetwear posing against a brutalist concrete building with sharp shadows and high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuwVmNRZBmoRTR-0uEwgkXNb1Y6Voc3DN_ph3tQE5l_oPVjry_Ewcefg1LDQDhlmOLo7tquWzdHtev-N2yoNHTN_hOHIfXEpEkPaPvtpxQI4ESjWr6HqWuwoyjg3fV-oGQPazXDobmS1_YKriNjWeISFF8DWD0HZkdwx4O-vWP7pV4kqVSTids992P9wwVgczWQxbs8z-bd-9RWRbHXjbi2_3Q1LnvcXXhqULH75XnbhqxVd7GwLqXRbHQO0tqaBVX3b9OmdcGGF2v"/>
+</div>
+<div class="relative z-10 px-12 w-full">
+<div class="max-w-7xl mx-auto">
+<span class="font-label text-secondary uppercase tracking-[0.3em] mb-4 block">Est. 2024</span>
+<h1 class="font-headline font-black text-7xl md:text-9xl uppercase tracking-tighter leading-none mb-8">
+                        BEYOND <br/>
+<span class="text-outline">FABRIC.</span>
+</h1>
+<div class="max-w-xl">
+<p class="text-lg md:text-xl font-body text-primary leading-relaxed">
+                            ZARLO is a digital flagship engineered for the vanguard. We merge architectural precision with the raw energy of urban nocturnal culture.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Story: Asymmetric Bento Grid -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-7 flex flex-col justify-center">
+<h2 class="font-headline font-bold text-5xl uppercase mb-12 tracking-tight">The Brutalist <br/>Philosophy</h2>
+<p class="font-body text-lg text-on-surface-variant leading-loose mb-8">
+                        We believe in the power of the monolith. Our designs are stripped of unnecessary noise, focusing on the structural integrity of every garment. Each "drop" is an intentional curation of silhouettes that redefine the urban landscape.
+                    </p>
+<div class="grid grid-cols-2 gap-8 font-label">
+<div>
+<span class="block text-secondary text-2xl font-bold">01</span>
+<span class="text-sm tracking-widest uppercase">Structural Integrity</span>
+</div>
+<div>
+<span class="block text-secondary text-2xl font-bold">02</span>
+<span class="text-sm tracking-widest uppercase">Monochromatic Vision</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img alt="Detail Philosophy" class="w-full h-full object-cover" data-alt="close-up detail of heavy black cotton fabric texture with precise white stitching and industrial metal hardware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCz3s6Enjq_GvoyuUQ6KomftuoVgm8sz4-ZNFMzP-V8peV0d5YMh57QSumLVsG3Gfm_Sbbttc-F1HK1Ed4bLXLuICkRyq-YVhtmJn_r_uLky458KEs4cUgPnZWcezOI2JiW6uz18dcjNGVlJwu5fJUzc4QPVxVjeOxYKTIm0OpvtOjMkLKU_KiqP4Z8BlBjVl1lfvyL-VN82yIx5YVCGbxN021FZ-6Bz7U1XwbyxpG2RPQyxSXPwi3gztXChCXoff1ry-H49oHk8zF"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-secondary flex items-center justify-center p-6 text-on-secondary">
+<p class="font-label text-xs font-bold leading-tight uppercase tracking-widest">Crafting the future of street luxury.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact & Store Locator: Split Layout -->
+<section class="bg-surface-container-low py-32 px-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+<!-- Contact Form -->
+<div>
+<h2 class="font-headline font-bold text-4xl uppercase mb-4 tracking-tight">Connect</h2>
+<p class="font-label text-primary text-sm uppercase tracking-widest mb-12">General inquiries &amp; collaborative visions</p>
+<form class="space-y-12">
+<div class="group relative">
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-2 group-focus-within:text-secondary transition-colors">Full Identity</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 text-white font-body placeholder:text-surface-container-highest py-4 outline-none transition-all" placeholder="NAME / ORGANIZATION" type="text"/>
+</div>
+<div class="group relative">
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-2 group-focus-within:text-secondary transition-colors">Digital Point</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 text-white font-body placeholder:text-surface-container-highest py-4 outline-none transition-all" placeholder="EMAIL ADDRESS" type="email"/>
+</div>
+<div class="group relative">
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-outline mb-2 group-focus-within:text-secondary transition-colors">The Message</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 text-white font-body placeholder:text-surface-container-highest py-4 outline-none transition-all resize-none" placeholder="BRIEF OR INQUIRY" rows="4"></textarea>
+</div>
+<button class="w-full py-6 bg-secondary text-on-secondary font-headline font-black uppercase tracking-[0.3em] text-sm hover:bg-white hover:text-black transition-all duration-300">
+                            TRANSMIT INQUIRY
+                        </button>
+</form>
+</div>
+<!-- Store & Info -->
+<div class="flex flex-col gap-16">
+<div class="bg-surface-container-high p-12">
+<h3 class="font-headline font-bold text-2xl uppercase mb-8">Flagship Nexus</h3>
+<div class="space-y-6 font-body text-on-surface-variant">
+<div>
+<span class="font-label text-xs text-secondary uppercase tracking-widest block mb-1">Location</span>
+<p>122 BERMONDSEY ST, LONDON SE1 3TX, UK</p>
+</div>
+<div>
+<span class="font-label text-xs text-secondary uppercase tracking-widest block mb-1">Operations</span>
+<p>MON — SAT: 11:00 - 20:00</p>
+<p>SUN: 12:00 - 18:00</p>
+</div>
+<div class="pt-6">
+<img alt="Store Map" class="w-full h-64 object-cover grayscale opacity-50 hover:opacity-100 transition-opacity" data-alt="monochrome stylized map showing the industrial streets of London with a gold marker for the boutique location" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeHT5oqsDe6mngXOuHIs4MfwThFZorWJ7QIr9tS-lFbSCQAUIQYJZJRdXYkN9U-2bG8UJUNeqcE--5VOtgFJ6JTWeLMZIaNjXSmQbKCkwUppSMJcX1OWWm7IQNNQn51MnN6OxiCEQJPAstkemXHRYjY-iEtFnKrghPRe9AoeP2SdPfjdaWtIN0moWioMdmVUjUFeL1vENn8GiS4A-c7FuTgiY9Z2gPWkBYp8OsqFRAfFwdz7mIP8wO1J6jBp58akWhoylhM6OViizL"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-label text-xs text-secondary uppercase tracking-widest mb-4">Support</h4>
+<p class="font-body text-primary text-sm">concierge@zarlo.digital</p>
+</div>
+<div>
+<h4 class="font-label text-xs text-secondary uppercase tracking-widest mb-4">Press</h4>
+<p class="font-body text-primary text-sm">media@zarlo.digital</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 bg-[#0E0E0E] tonal-shift-from-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-4xl font-black tracking-widest text-white mb-8 font-headline">ZARLO</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full font-['Space_Grotesk'] text-xs tracking-tighter">
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold tracking-widest mb-2">LEGAL</span>
+<a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">PRIVACY POLICY</a>
+<a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">TERMS OF SERVICE</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold tracking-widest mb-2">SERVICE</span>
+<a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">SHIPPING &amp; RETURNS</a>
+<a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">CONTACT</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold tracking-widest mb-2">SOCIAL</span>
+<a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">INSTAGRAM</a>
+<a class="text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">TIKTOK</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-white font-bold tracking-widest mb-2">NEWSLETTER</span>
+<div class="flex border-b border-outline-variant">
+<input class="bg-transparent border-none focus:ring-0 text-[10px] w-full p-2 uppercase" placeholder="JOIN THE VANGUARD" type="email"/>
+<button class="material-symbols-outlined text-white" data-icon="arrow_forward">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[#C6C6C7] text-[10px] tracking-widest">© 2024 ZARLO DIGITAL FLAGSHIP</p>
+<div class="flex gap-8">
+<span class="text-white/20 text-[10px] tracking-widest font-label">DESIGNED FOR THE NOCTURNAL</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZARLO | CHECKOUT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Manrope:wght@400;600&amp;family=Space+Grotesk:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#454747",
+                    "primary": "#c6c6c7",
+                    "error": "#ffb4ab",
+                    "primary-fixed": "#e2e2e2",
+                    "on-tertiary-container": "#e71820",
+                    "on-tertiary": "#690005",
+                    "secondary-fixed-dim": "#eac169",
+                    "inverse-primary": "#5d5f5f",
+                    "surface-bright": "#393939",
+                    "on-tertiary-fixed": "#410002",
+                    "secondary-container": "#735500",
+                    "on-surface-variant": "#cfc4c5",
+                    "inverse-surface": "#e2e2e2",
+                    "surface": "#131313",
+                    "error-container": "#93000a",
+                    "primary-container": "#000000",
+                    "on-secondary-fixed": "#261a00",
+                    "surface-container": "#1f1f1f",
+                    "tertiary-container": "#000000",
+                    "on-background": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#93000b",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "surface-tint": "#c6c6c7",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-error": "#690005",
+                    "surface-variant": "#353535",
+                    "surface-container-lowest": "#0e0e0e",
+                    "tertiary-fixed-dim": "#ffb4ab",
+                    "secondary": "#eac169",
+                    "surface-container-highest": "#353535",
+                    "tertiary": "#ffb4ab",
+                    "surface-container-high": "#2a2a2a",
+                    "on-secondary": "#3f2e00",
+                    "surface-container-low": "#1b1b1b",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#988e90",
+                    "background": "#131313",
+                    "secondary-fixed": "#ffdf9e",
+                    "surface-dim": "#131313",
+                    "on-surface": "#e2e2e2",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-primary-container": "#747576",
+                    "on-secondary-container": "#f5cc72",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "inverse-on-surface": "#303030",
+                    "on-primary": "#2f3131",
+                    "outline-variant": "#4c4546"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Manrope"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0E0E0E;
+            color: #E2E2E2;
+            font-family: 'Manrope', sans-serif;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface">
+<!-- TopNavBar (Suppressed for focused checkout flow, but keeping brand anchor as per instruction for shell relevance - here we use a simplified version for checkout) -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 h-20 w-full">
+<div class="text-2xl font-black tracking-[0.2em] text-white font-headline">ZARLO</div>
+<div class="hidden md:flex gap-8 items-center">
+<span class="font-label text-xs tracking-widest text-primary opacity-50">SECURE CHECKOUT</span>
+<span class="material-symbols-outlined text-primary" data-icon="lock">lock</span>
+</div>
+<div class="flex items-center gap-4">
+<a class="font-label text-xs tracking-tighter text-primary hover:text-white transition-colors" href="#">BACK TO SHOP</a>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Checkout Form & Cart -->
+<div class="lg:col-span-7 space-y-20">
+<!-- Section 1: Cart Items -->
+<section id="cart-list">
+<h2 class="font-headline text-3xl font-black tracking-tight mb-10 text-white uppercase italic">YOUR BAG [02]</h2>
+<div class="space-y-1">
+<!-- Item 1 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 bg-surface-container-low group transition-all duration-300">
+<div class="w-full md:w-32 h-40 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up of a structured black streetwear puffer jacket with metallic hardware on a dark textured background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj7f_NLpKTybFIPXEeKFs5HQXM1XJyDwictow7NnaWv6c0kx2bhflluPrkgGwWxoQcalkYkBVMbcPNmI2mq3r1dUY73JVoIvvlI-7eLHrQdTIfvbz9nd9lOj2hQmUQwXQAz70QCsfpzZALUbFU4LQTzOn-Pxckvelghtk3go5QKfebiMtnTu2rA5d78xdWa739Ywea8rjCpf38UZ5p2SHhwe88J6rm2rJdQ5IBlOHQd9fovsIUAiHaFMQ8Ckzkas8pjGipgiRnDh0U"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[10px] text-secondary tracking-[0.2em] mb-1">NEW DROP</p>
+<h3 class="font-headline font-bold text-lg text-white">NEO-STRETCH BOMBER</h3>
+<p class="font-body text-sm text-on-surface-variant">Size: L | Color: Onyx Black</p>
+</div>
+<p class="font-label text-lg font-bold">₹18,400</p>
+</div>
+<div class="flex justify-between items-end mt-4">
+<div class="flex items-center border border-outline-variant/30 px-3 py-1">
+<button class="material-symbols-outlined text-sm hover:text-secondary" data-icon="remove">remove</button>
+<span class="mx-6 font-label text-sm">01</span>
+<button class="material-symbols-outlined text-sm hover:text-secondary" data-icon="add">add</button>
+</div>
+<button class="font-label text-[10px] tracking-widest text-error hover:underline uppercase">Remove</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col md:flex-row gap-6 p-6 bg-surface-container-low group transition-all duration-300">
+<div class="w-full md:w-32 h-40 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="High-contrast studio shot of premium technical sneakers with neon gold accents and architectural sole design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxkylAPvDM1FWr9o8BNfQifk2rfQO9GoiwuBiEPDhw1a_EO48XlzO5G_egLF02ZHSmZEmaM76KytcZNMacUW4f3cp4EJ780nWgazhfVq2tIWtLMRccqaAhbqYd0drMSLhwoLPfBYi1voAw8wLlLdxpwNxfCDCQLBb-tSKSrMEhKcJkzhuYi3SXCpaYtFQXDIjCukVUPQQDvyrcGa_mouibBFjL882lBPDT5DxQsak7xOWaZ3H6D9yxSByy5ehUrxk7jYAhn3hmZ5o6"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[10px] text-secondary tracking-[0.2em] mb-1">LIMITED EDITION</p>
+<h3 class="font-headline font-bold text-lg text-white">ZARLO KINETIC V1</h3>
+<p class="font-body text-sm text-on-surface-variant">Size: 42 | Color: Shadow Gold</p>
+</div>
+<p class="font-label text-lg font-bold">₹24,900</p>
+</div>
+<div class="flex justify-between items-end mt-4">
+<div class="flex items-center border border-outline-variant/30 px-3 py-1">
+<button class="material-symbols-outlined text-sm hover:text-secondary" data-icon="remove">remove</button>
+<span class="mx-6 font-label text-sm">01</span>
+<button class="material-symbols-outlined text-sm hover:text-secondary" data-icon="add">add</button>
+</div>
+<button class="font-label text-[10px] tracking-widest text-error hover:underline uppercase">Remove</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Shipping -->
+<section id="shipping-details">
+<div class="flex items-baseline gap-4 mb-8">
+<span class="font-headline text-4xl font-black text-secondary/20">01</span>
+<h2 class="font-headline text-2xl font-bold text-white uppercase tracking-wider">SHIPPING INFORMATION</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative group">
+<label class="block font-label text-[10px] text-primary tracking-widest mb-2 uppercase">First Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 transition-colors font-body text-white" placeholder="ENTER FIRST NAME" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-label text-[10px] text-primary tracking-widest mb-2 uppercase">Last Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 transition-colors font-body text-white" placeholder="ENTER LAST NAME" type="text"/>
+</div>
+<div class="md:col-span-2 relative group">
+<label class="block font-label text-[10px] text-primary tracking-widest mb-2 uppercase">Delivery Address</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 transition-colors font-body text-white" placeholder="STREET ADDRESS, APARTMENT, SUITE" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-label text-[10px] text-primary tracking-widest mb-2 uppercase">City</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 transition-colors font-body text-white" placeholder="CITY" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-label text-[10px] text-primary tracking-widest mb-2 uppercase">Postal Code</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 px-0 py-2 transition-colors font-body text-white" placeholder="000 000" type="text"/>
+</div>
+</div>
+</section>
+<!-- Section 3: Payment -->
+<section id="payment-method">
+<div class="flex items-baseline gap-4 mb-8">
+<span class="font-headline text-4xl font-black text-secondary/20">02</span>
+<h2 class="font-headline text-2xl font-bold text-white uppercase tracking-wider">PAYMENT METHOD</h2>
+</div>
+<div class="space-y-4">
+<!-- Razorpay Highlighted Option -->
+<div class="p-6 bg-secondary/10 border border-secondary/30 flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-6">
+<div class="w-6 h-6 border-2 border-secondary flex items-center justify-center p-1">
+<div class="w-full h-full bg-secondary"></div>
+</div>
+<div>
+<h4 class="font-headline font-bold text-white tracking-widest">RAZORPAY</h4>
+<p class="font-body text-xs text-on-surface-variant">Cards, UPI, Netbanking, &amp; Wallets</p>
+</div>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="credit_card">credit_card</span>
+<span class="material-symbols-outlined text-secondary" data-icon="account_balance">account_balance</span>
+</div>
+</div>
+<!-- Secondary Option -->
+<div class="p-6 bg-surface-container border border-white/5 flex items-center justify-between cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-6">
+<div class="w-6 h-6 border border-outline-variant"></div>
+<div>
+<h4 class="font-headline font-bold text-primary tracking-widest">CASH ON DELIVERY</h4>
+<p class="font-body text-xs text-on-surface-variant">Pay when your order arrives</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping">local_shipping</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Summary -->
+<div class="lg:col-span-5">
+<div class="sticky top-32 space-y-8">
+<div class="bg-surface-container-high p-8 border-t-2 border-secondary">
+<h2 class="font-headline text-xl font-bold mb-8 tracking-widest uppercase">ORDER SUMMARY</h2>
+<div class="space-y-4 font-label text-sm mb-8">
+<div class="flex justify-between text-on-surface-variant">
+<span>SUBTOTAL</span>
+<span>₹43,300.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>ESTIMATED SHIPPING</span>
+<span>FREE</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>TAXES (GST)</span>
+<span>₹7,794.00</span>
+</div>
+<div class="h-px bg-outline-variant/20 my-4"></div>
+<div class="flex justify-between text-2xl font-bold text-white font-headline tracking-tighter">
+<span>TOTAL</span>
+<span>₹51,094.00</span>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full py-6 bg-secondary text-on-secondary font-headline font-black tracking-[0.3em] uppercase hover:bg-white hover:text-black transition-all duration-300">
+                                COMPLETE PURCHASE
+                            </button>
+<p class="text-center font-body text-[10px] text-on-surface-variant opacity-60 px-4">
+                                BY CLICKING COMPLETE PURCHASE, YOU AGREE TO ZARLO'S TERMS OF SERVICE AND PRIVACY POLICY.
+                            </p>
+</div>
+<!-- Promo Code -->
+<div class="mt-12">
+<label class="block font-label text-[10px] text-primary tracking-widest mb-4 uppercase">Promo Code</label>
+<div class="flex">
+<input class="flex-1 bg-surface-container-lowest border-none focus:ring-0 font-label text-sm py-3 px-4" placeholder="ENTER CODE" type="text"/>
+<button class="bg-primary text-on-primary px-6 font-label font-bold text-xs hover:bg-white transition-colors">APPLY</button>
+</div>
+</div>
+</div>
+<!-- Security Badge -->
+<div class="flex items-center gap-4 p-4 border border-white/5 opacity-50 grayscale">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<p class="font-label text-[10px] tracking-widest">SECURE SSL ENCRYPTED TRANSACTION PROVIDER</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0E0E0E] w-full py-20 px-6 md:px-12 tonal-shift-from-surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 w-full max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-4xl font-black tracking-widest text-white mb-8 font-headline">ZARLO</div>
+<p class="font-label text-xs tracking-tighter text-[#C6C6C7]">© 2024 ZARLO DIGITAL FLAGSHIP</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-sm text-white mb-6 tracking-widest uppercase">CUSTOMER SERVICE</h4>
+<ul class="space-y-4">
+<li><a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">SHIPPING &amp; RETURNS</a></li>
+<li><a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">TRACK ORDER</a></li>
+<li><a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">CONTACT</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-sm text-white mb-6 tracking-widest uppercase">LEGAL</h4>
+<ul class="space-y-4">
+<li><a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">PRIVACY POLICY</a></li>
+<li><a class="font-label text-xs tracking-tighter text-[#C6C6C7] hover:text-[#EAC169] transition-colors" href="#">TERMS OF SERVICE</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-sm text-white mb-6 tracking-widest uppercase">NEWSLETTER</h4>
+<div class="flex border-b border-outline-variant pb-2">
+<input class="bg-transparent border-none focus:ring-0 font-label text-xs w-full text-white" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="material-symbols-outlined text-primary hover:text-white" data-icon="arrow_forward">arrow_forward</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
