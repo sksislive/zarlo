@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
-// In production (Firebase App Hosting), backend is on the same host under /_/backend
-// In development, proxy to the local backend server
-const backendUrl = isProd ? '/_/backend' : 'http://localhost:5000';
+// Priority: NEXT_PUBLIC_API_URL (set in Vercel/hosting env vars)
+// Fallback: /_/backend (Firebase App Hosting), then localhost:5000 (dev)
+const backendUrl =
+  process.env.NEXT_PUBLIC_API_URL ||
+  (isProd ? '/_/backend' : 'http://localhost:5000');
 
 const nextConfig: NextConfig = {
   images: {
@@ -11,6 +13,7 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'images.unsplash.com' },
       { protocol: 'https', hostname: 'source.unsplash.com' },
       { protocol: 'https', hostname: 'lh3.googleusercontent.com' },
+      { protocol: 'https', hostname: '**.googleusercontent.com' },
       { protocol: 'https', hostname: 'ibb.co' },
       { protocol: 'https', hostname: 'i.ibb.co' },
       { protocol: 'http', hostname: 'localhost' }
